@@ -1,20 +1,6 @@
-FROM node:20-alpine
-
-WORKDIR /app
-
-# Install dependencies
-# Using npm install instead of npm ci to work without package-lock.json
-COPY package*.json ./
-RUN npm install --omit=dev
-
-# Copy source
-COPY . .
-
-# Build if needed
-RUN npm run build --if-present
-
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
+COPY sl55.html /usr/share/nginx/html/sl55.html
+COPY sl55-tech.html /usr/share/nginx/html/sl55-tech.html
+COPY style.css /usr/share/nginx/html/style.css
 EXPOSE 80
-ENV PORT=80
-ENV NODE_ENV=production
-
-CMD ["npm", "start"]

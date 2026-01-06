@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toys - Automotive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop');">
+        <div class="hero-content">
+            <h1>My Toys</h1>
+            <p class="subtitle">A Collection of Speed & Engineering</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="section-header">
+            <h2>The Garage</h2>
+            <div class="line"></div>
+        </div>
+        <div class="specs-grid">
+            <!-- SL 55 AMG Card -->
+            <div class="spec-card" style="text-align: left; cursor: pointer;" onclick="window.location.href='sl55.html'">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop" alt="SL 55 AMG" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
+                <h3>2005 Mercedes-Benz SL 55 AMG</h3>
+                <p style="font-size: 1rem; font-weight: 400; margin-bottom: 1rem;">The Silver Legend. V8 Kompressor, 500+ HP.</p>
+                <a href="sl55.html" class="btn" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Details</a>
+            </div>
+
+            <!-- MV Agusta Placeholder -->
+            <div class="spec-card" style="text-align: left; opacity: 0.7;">
+                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2070&auto=format&fit=crop" alt="MV Agusta" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem; filter: grayscale(100%);">
+                <h3>2017 MV Agusta Brutale 800</h3>
+                <p style="font-size: 1rem; font-weight: 400; margin-bottom: 1rem;">Coming Soon. Italian Art on Wheels.</p>
+                <span class="btn" style="font-size: 0.8rem; padding: 0.5rem 1rem; border-color: #666; color: #666; cursor: default;">Arriving Later</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Toys Portfolio.</p>
+    </footer>
+
+</body>
+</html>
